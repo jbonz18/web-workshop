@@ -55,6 +55,7 @@ function paint () {
     
 //}
 
+//function to make the highlight button to click and unclick
 function toggleHighlight() {
     var textSection  = document.getElementById("textSection");
     
