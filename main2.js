@@ -1,5 +1,6 @@
 console.log("testing...");
 console.log(new Date());
+console.log("Take you sunglasses!!");
 
 //the below variable is not defined on the html page
 //if we want to display the output of the below variable we will use the DOM, using get element by ID
@@ -55,20 +56,46 @@ function paint () {
     
 //}
 
+//function to make the highlight button to click and unclick to hightlight
 function toggleHighlight() {
     var textSection  = document.getElementById("textSection");
-    
-    if(textSection.classList.contains("highlight")) 
-    {
-        textSection.classList.remove("highlight");
-    } 
-    else 
-    {
+
+    isToggled =!isToggled
+
+    if (isToggled) {
         textSection.classList.add("highlight");
     }
-}
+
+    else {
+        textSection.classList.remove("no highlight");
+
+    }
     
 
+    //textSection.classList.toggle("highlight");
+    
+    // if(textSection.classList.contains("highlight")) 
+    // {
+    //     textSection.classList.remove("highlight");
+    // } 
+    // else 
+    // {
+    //     textSection.classList.add("highlight");
+    // }
+
+    //if(true){
+        //console.log("highlight");
+
+    //}
+    //else {
+
+    //}
+}
+
+
+
+    
+//test
 function call123() {
 
 }
